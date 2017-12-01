@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DarkGreen"
+    tools:context="com.example.anti.proekt.MainActivity">
+
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="ADD USER DETAILS: "
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/details"
+        android:layout_centerInParent="true"
+        android:background="@drawable/forma"
+        android:backgroundTint="@color/Green"
+        android:hint="   NAME"
+        android:padding="5dp"
+        android:textColor="@color/Black" />
+
+
+    <EditText
+        android:id="@+id/last"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/name"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/forma"
+        android:backgroundTint="@color/Green"
+        android:hint="   LASTNAME"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/last"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/forma"
+        android:backgroundTint="@color/Green"
+        android:hint="   USERNAME"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/gen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Gender : "
+        android:textColor="@color/Black"
+        android:textSize="20dp" />
+
+    <RadioGroup
+        android:id="@+id/mf"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gen"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/forma2"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:focusedByDefault="true"
+            android:text="M" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="F" />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="NEXT"
+        android:padding="5dp"
+        android:background="@drawable/forma3"
+        android:drawableRight="@drawable/right_arrow"/>
+
+</RelativeLayout>

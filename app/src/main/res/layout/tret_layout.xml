@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DarkGreen"
+    tools:context="com.example.anti.proekt.MainActivity">
+
+    <Spinner
+        android:id="@+id/spiner"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/forma4"
+        android:textColor="@color/Black" />
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/add"
+        android:layout_marginTop="9dp"
+
+        android:background="@drawable/forma2"
+        android:text="EDIT USER" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/edit"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/spiner"
+        android:background="@drawable/forma2"
+        android:text="ADD USER" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/add"
+        android:layout_marginTop="15dp"
+        android:background="@color/White"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/gen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="Change Gender : "
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+        <RadioGroup
+
+            android:id="@+id/mf"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gen"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/forma2"
+
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+
+                android:text="M" />
+
+            <RadioButton
+                android:id="@+id/female2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+
+                android:text="F" />
+        </RadioGroup>
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_below="@+id/rg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/namelast"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="280dp"
+                android:hint="Name LastName"
+                android:background="@color/LightGray"
+                android:textColorHint="@color/Black"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/Black"/>
+
+            <ImageView
+                android:id="@+id/slika"
+                android:layout_marginTop="10dp"
+                android:layout_width="220dp"
+                android:layout_gravity="center"
+                android:layout_height="220dp" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/netView"
+            android:layout_width="350dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:hint="Internet not checked yet!"
+            android:textColorHint="@color/Black"
+           android:gravity="start"
+            android:layout_marginTop="70dp"
+            android:layout_below="@id/frame"
+            android:textColor="@color/Coral"
+            />
+
+        <Button
+            android:id="@+id/checkconn"
+            android:layout_width="345dp"
+            android:layout_height="55dp"
+            android:layout_below="@id/user"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/forma3"
+            android:text="CHECK INTERNET CONNECTION"
+
+            android:textColor="@color/Black" />
+    </LinearLayout>
+</RelativeLayout>

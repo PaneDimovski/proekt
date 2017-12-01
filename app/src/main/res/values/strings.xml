@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">proekt</string>
+
+    <string name="register"> <u>Guest</u></string>
+    <string name="login"> <u>LOG  IN</u></string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="title_activity_main4">Main4Activity</string>
+
+
+</resources>
