@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
         Intent data = new Intent(MainActivity.this, Main3Activity.class);
         User  guest = new User("", "", "Guest", 'm');
-        data.putExtra("NAME_EXTRA", guest);dakj
+        data.putExtra("NAME_EXTRA", guest);
         startActivity(data);
 
     }
